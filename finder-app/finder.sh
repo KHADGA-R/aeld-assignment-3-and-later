@@ -1,5 +1,4 @@
-
-#!/bin/bash
+#!/bin/sh
 
 # Author : Khadga Parajuli
 # Check that exactly two command-line arguments were provided.
