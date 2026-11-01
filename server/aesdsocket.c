@@ -540,8 +540,9 @@ if (client == NULL) {
 
 client->client_fd = client_fd;
 
-strncpy(client->client_ip, client_ip,
-        sizeof(client->client_ip) - 1);
+snprintf(client->client_ip,
+         sizeof(client->client_ip),
+         "%s", client_ip);
 
 /* Create a separate thread for this client. */
 int error = pthread_create(
