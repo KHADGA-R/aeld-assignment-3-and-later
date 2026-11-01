@@ -12,7 +12,7 @@ all: $(TARGET)
 default: all
 
 $(TARGET): $(SOURCES)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $(TARGET) $(SOURCES)
 
 clean:
 	rm -f $(TARGET) *.o
